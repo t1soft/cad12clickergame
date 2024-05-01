@@ -7,15 +7,16 @@
 
     Dim difLevel As Integer = My.Settings.chosenDifficulty
 
-    Dim opponentCooldownA As Integer = 5
-    Dim opponentCooldownB As Integer = 10
-    Dim opponentCooldownC As Integer = 15
+    Dim opponentCooldownA As Integer
+    Dim opponentCooldownB As Integer
+    Dim opponentCooldownC As Integer
+
     Dim opponentCooldownRegulator As Integer = 0
     Dim opponentCooldownUsed As Boolean = True
 
-    Dim UserA As Integer = 15
-    Dim UserB As Integer = 25
-    Dim UserC As Integer = 35
+    Dim UserA As Integer = 10
+    Dim UserB As Integer = 20
+    Dim UserC As Integer = 30
     Dim AStatus As Boolean = False
     Dim BStatus As Boolean = False
     Dim CStatus As Boolean = False
@@ -40,6 +41,18 @@
         UserC = 35
         CStatus = True
 
+        Label1.Text = My.Settings.userUsernane + " (YOU)"
+
+        If difLevel = 4 Then
+            opponentCooldownA = 1
+            opponentCooldownB = 2
+            opponentCooldownC = 3
+        Else
+            opponentCooldownA = 3
+            opponentCooldownB = 5
+            opponentCooldownC = 8
+        End If
+
     End Sub
 
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
@@ -58,6 +71,9 @@
     End Sub
 
     Function difficultySetter(ByVal coolSelect As Integer)
+
+        ' Sets Difficulty for the Game Session using the difLevel set from menu.
+
         If difLevel = 0 Then
             If coolSelect = 1 Then
                 opponentCooldownA = 15
@@ -71,35 +87,35 @@
         End If
         If difLevel = 1 Then
             If coolSelect = 1 Then
-                opponentCooldownA = 11
-            End If
-            If coolSelect = 2 Then
-                opponentCooldownB = 18
-            End If
-            If coolSelect = 3 Then
-                opponentCooldownC = 27
-            End If
-        End If
-        If difLevel = 2 Then
-            If coolSelect = 1 Then
                 opponentCooldownA = 9
             End If
             If coolSelect = 2 Then
                 opponentCooldownB = 15
             End If
             If coolSelect = 3 Then
-                opponentCooldownC = 24
+                opponentCooldownC = 25
+            End If
+        End If
+        If difLevel = 2 Then
+            If coolSelect = 1 Then
+                opponentCooldownA = 5
+            End If
+            If coolSelect = 2 Then
+                opponentCooldownB = 10
+            End If
+            If coolSelect = 3 Then
+                opponentCooldownC = 15
             End If
         End If
         If difLevel = 3 Then
             If coolSelect = 1 Then
-                opponentCooldownA = 6
+                opponentCooldownA = 1
             End If
             If coolSelect = 2 Then
-                opponentCooldownB = 11
+                opponentCooldownB = 2
             End If
             If coolSelect = 3 Then
-                opponentCooldownC = 20
+                opponentCooldownC = 3
             End If
         End If
         If difLevel = 4 Then
@@ -107,15 +123,18 @@
                 opponentCooldownA = 1
             End If
             If coolSelect = 2 Then
-                opponentCooldownB = 8
+                opponentCooldownB = 1
             End If
             If coolSelect = 3 Then
-                opponentCooldownC = 15
+                opponentCooldownC = 2
             End If
         End If
     End Function
 
     Function winEndProtocall(ByVal gameResult As Integer)
+
+        ' Stops the game from playing.
+
         Timer1.Enabled = False
         Button1.Enabled = False
         Button2.Enabled = False
@@ -123,6 +142,9 @@
         Button4.Enabled = False
         RunAwayForefitToolStripMenuItem.Enabled = False
         GameStarted = False
+
+        ' Gives Game Result, and Adds a win or loss to the counter
+
         If gameResult = 1 Then
             Label4.Text = "You have Won the game! (Game has ended, Close this window.)"
             My.Settings.WinsCount = My.Settings.WinsCount + 1
@@ -249,7 +271,7 @@
     End Sub
 
     Private Sub Form1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Me.KeyPress
-        If e.KeyChar = "a"c Or e.KeyChar = "s"c Then
+        If e.KeyChar = "k" Or e.KeyChar = "l" Or e.KeyChar = " " Then
             If GameStarted = True Then
                 If ProgressBar1.Value = 100 Then
                     winEndProtocall(1)
@@ -258,8 +280,8 @@
                 End If
             End If
         End If
-        If e.KeyChar = "j"c Then
-            If GameStarted = True Then
+        If e.KeyChar = "a" Then
+            If GameStarted = True And Button2.Enabled = True Then
                 If ProgressBar1.Value = 95 Or ProgressBar1.Value > 95 Then
                     ProgressBar1.Value = 100
                     winEndProtocall(1)
@@ -273,8 +295,8 @@
             End If
 
         End If
-        If e.KeyChar = "k"c Then
-            If GameStarted = True Then
+        If e.KeyChar = "s" Then
+            If GameStarted = True And Button3.Enabled = True Then
                 If ProgressBar1.Value = 85 Or ProgressBar1.Value > 85 Then
                     ProgressBar1.Value = 100
                     winEndProtocall(1)
@@ -288,8 +310,8 @@
             End If
 
         End If
-        If e.KeyChar = "l"c Then
-            If GameStarted = True Then
+        If e.KeyChar = "d" Then
+            If GameStarted = True And Button4.Enabled = True Then
                 If ProgressBar1.Value = 75 Or ProgressBar1.Value > 75 Then
                     ProgressBar1.Value = 100
                     winEndProtocall(1)

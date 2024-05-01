@@ -3,15 +3,18 @@
   <assemblyIdentity name="puzzle 0-2.application" version="3.4.2022.2" publicKeyToken="0000000000000000" language="en" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <description asmv2:publisher="cad12ishappy" asmv2:product="cad12's clicker game!" asmv2:supportUrl="https://discord.gg/thepile" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" />
+  <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
+    <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
+  </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="puzzle 0-2.exe.manifest" size="4007">
+    <dependentAssembly dependencyType="install" codebase="puzzle 0-2.exe.manifest" size="4751">
       <assemblyIdentity name="puzzle 0-2.exe" version="3.4.2022.2" publicKeyToken="0000000000000000" language="en" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ifJrJH+AJcIvsBsk4cUISF9isp4=</dsig:DigestValue>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4RgTUieuDwyr1ei3OfVdFf7JRHIUQN8GFCxRMINCTlo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

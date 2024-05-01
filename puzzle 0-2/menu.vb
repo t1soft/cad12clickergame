@@ -61,4 +61,5 @@
         TextBox1.Text = My.Settings.WinsCount
         TextBox2.Text = My.Settings.LossesCount
     End Sub
+
 End Class
