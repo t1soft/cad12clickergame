@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+
+Public Class Form1
 
 #Region "Variables"
 
@@ -43,15 +45,9 @@
 
         Label1.Text = My.Settings.userUsernane + " (YOU)"
 
-        If difLevel = 4 Then
-            opponentCooldownA = 1
-            opponentCooldownB = 2
-            opponentCooldownC = 3
-        Else
-            opponentCooldownA = 3
-            opponentCooldownB = 5
-            opponentCooldownC = 8
-        End If
+        opponentCooldownA = My.Settings.OppCooldownA
+        opponentCooldownB = My.Settings.OppCooldownB
+        opponentCooldownC = My.Settings.OppCooldownC
 
     End Sub
 
@@ -74,61 +70,18 @@
 
         ' Sets Difficulty for the Game Session using the difLevel set from menu.
 
-        If difLevel = 0 Then
-            If coolSelect = 1 Then
-                opponentCooldownA = 15
-            End If
-            If coolSelect = 2 Then
-                opponentCooldownB = 25
-            End If
-            If coolSelect = 3 Then
-                opponentCooldownC = 35
-            End If
+        If coolSelect = 1 Then
+            opponentCooldownA = My.Settings.OppCooldownA
         End If
-        If difLevel = 1 Then
-            If coolSelect = 1 Then
-                opponentCooldownA = 9
-            End If
-            If coolSelect = 2 Then
-                opponentCooldownB = 15
-            End If
-            If coolSelect = 3 Then
-                opponentCooldownC = 25
-            End If
+
+        If coolSelect = 2 Then
+            opponentCooldownB = My.Settings.OppCooldownB
         End If
-        If difLevel = 2 Then
-            If coolSelect = 1 Then
-                opponentCooldownA = 5
-            End If
-            If coolSelect = 2 Then
-                opponentCooldownB = 10
-            End If
-            If coolSelect = 3 Then
-                opponentCooldownC = 15
-            End If
+
+        If coolSelect = 3 Then
+            opponentCooldownC = My.Settings.OppCooldownC
         End If
-        If difLevel = 3 Then
-            If coolSelect = 1 Then
-                opponentCooldownA = 1
-            End If
-            If coolSelect = 2 Then
-                opponentCooldownB = 2
-            End If
-            If coolSelect = 3 Then
-                opponentCooldownC = 3
-            End If
-        End If
-        If difLevel = 4 Then
-            If coolSelect = 1 Then
-                opponentCooldownA = 1
-            End If
-            If coolSelect = 2 Then
-                opponentCooldownB = 1
-            End If
-            If coolSelect = 3 Then
-                opponentCooldownC = 2
-            End If
-        End If
+
     End Function
 
     Function winEndProtocall(ByVal gameResult As Integer)
@@ -147,17 +100,22 @@
 
         If gameResult = 1 Then
             Label4.Text = "You have Won the game! (Game has ended, Close this window.)"
-            My.Settings.WinsCount = My.Settings.WinsCount + 1
+            My.Settings.userXP = My.Settings.userXP + My.Settings.gameXP
             My.Settings.Save()
+            main.TextBox1.Text = My.Settings.userXP
         ElseIf gameResult = 2 Then
             Label4.Text = "You have Lost. Dont give up, keep trying! (Game has ended, Close this window.)"
-            My.Settings.LossesCount = My.Settings.LossesCount + 1
+            My.Settings.userXP = My.Settings.userXP - My.Settings.gameXP
             My.Settings.Save()
+            main.TextBox1.Text = My.Settings.userXP
         ElseIf gameResult = 3 Then
             Label4.Text = "You have Forfited and lost. (Game has ended, Close this window.)"
-            My.Settings.LossesCount = My.Settings.LossesCount + 1
+            My.Settings.userXP = My.Settings.userXP - My.Settings.gameXP
             My.Settings.Save()
+            main.TextBox1.Text = My.Settings.userXP
         End If
+
+
     End Function
 
     Function OpponentLogic()
@@ -219,7 +177,11 @@
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         If ProgressBar1.Value > 0 Then
-            ProgressBar1.Value = ProgressBar1.Value - 1
+            If ProgressBar1.Value > My.Settings.OppClickSpeed Then
+                ProgressBar1.Value = ProgressBar1.Value - My.Settings.OppClickSpeed
+            Else
+                ProgressBar1.Value = 0
+            End If
             OpponentLogic()
         End If
         If ProgressBar1.Value = 100 Then
@@ -229,10 +191,13 @@
             winEndProtocall(2)
         End If
 
+        ToolStripMenuItem5.Text = ProgressBar1.Value
+
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
 
+        ' Power-Ups Logic
 
         If AStatus = True Then
             UserA = UserA - 1
@@ -271,7 +236,7 @@
     End Sub
 
     Private Sub Form1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Me.KeyPress
-        If e.KeyChar = "k" Or e.KeyChar = "l" Or e.KeyChar = " " Then
+        If e.KeyChar = "j" Or e.KeyChar = "k" Or e.KeyChar = "l" Or e.KeyChar = "J" Or e.KeyChar = "K" Or e.KeyChar = "L" Then
             If GameStarted = True Then
                 If ProgressBar1.Value = 100 Then
                     winEndProtocall(1)
@@ -280,7 +245,7 @@
                 End If
             End If
         End If
-        If e.KeyChar = "a" Then
+        If e.KeyChar = "a" Or e.KeyChar = "A" Then
             If GameStarted = True And Button2.Enabled = True Then
                 If ProgressBar1.Value = 95 Or ProgressBar1.Value > 95 Then
                     ProgressBar1.Value = 100
@@ -295,7 +260,7 @@
             End If
 
         End If
-        If e.KeyChar = "s" Then
+        If e.KeyChar = "s" Or e.KeyChar = "S" Then
             If GameStarted = True And Button3.Enabled = True Then
                 If ProgressBar1.Value = 85 Or ProgressBar1.Value > 85 Then
                     ProgressBar1.Value = 100
@@ -310,7 +275,7 @@
             End If
 
         End If
-        If e.KeyChar = "d" Then
+        If e.KeyChar = "d" Or e.KeyChar = "D" Then
             If GameStarted = True And Button4.Enabled = True Then
                 If ProgressBar1.Value = 75 Or ProgressBar1.Value > 75 Then
                     ProgressBar1.Value = 100
@@ -388,5 +353,10 @@
         End If
     End Sub
 
-
+    Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        If GameStarted = True Then
+            e.Cancel = True
+            winEndProtocall(3)
+        End If
+    End Sub
 End Class

@@ -24,7 +24,7 @@
     <OldToolsVersion>3.5</OldToolsVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkProfile />
-    <PublishUrl>F:\Documents\T1_Publish\clicker-game\</PublishUrl>
+    <PublishUrl>C:\Users\priva\Desktop\game1\v2024-4-30-1\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -34,12 +34,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <SupportUrl>https://discord.gg/thepile</SupportUrl>
     <TargetCulture>en</TargetCulture>
-    <ProductName>cad12%27s clicker game!</ProductName>
-    <PublisherName>cad12ishappy</PublisherName>
-    <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>3.4.2022.%2a</ApplicationVersion>
+    <ProductName>TheProgressSpammer</ProductName>
+    <PublisherName>cad</PublisherName>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>2024.4.30.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -65,16 +64,16 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>47A5748B5485219583FF43AE5A14AF82DB989477</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>75D5E8494DC5284708AFF8C24E93568DEBD16615</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>cad12%27s Clicker Game!_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>cad12%27s Clicker Game!_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
@@ -109,6 +108,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1v1form.Designer.vb">
+      <DependentUpon>1v1form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1v1form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -116,10 +121,10 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="menu.Designer.vb">
-      <DependentUpon>menu.vb</DependentUpon>
+    <Compile Include="main.Designer.vb">
+      <DependentUpon>main.vb</DependentUpon>
     </Compile>
-    <Compile Include="menu.vb">
+    <Compile Include="main.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -140,12 +145,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="1v1form.resx">
+      <DependentUpon>1v1form.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="menu.resx">
-      <DependentUpon>menu.vb</DependentUpon>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -156,6 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="cad12%27s Clicker Game!_1_TemporaryKey.pfx" />
     <None Include="cad12%27s Clicker Game!_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
@@ -172,8 +181,26 @@
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>true</Install>
+      <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\davidgamer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\easymode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marvinmode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moderatehard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

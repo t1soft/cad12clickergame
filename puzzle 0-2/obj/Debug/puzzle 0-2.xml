@@ -22,5 +22,30 @@ puzzle 0-2
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:puzzle_0_1.My.Resources.Resources.davidgamer">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:puzzle_0_1.My.Resources.Resources.easymode">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:puzzle_0_1.My.Resources.Resources.marvinmode">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:puzzle_0_1.My.Resources.Resources.moderatehard">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:puzzle_0_1.My.Resources.Resources.normal">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

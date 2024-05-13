@@ -1,8 +1,8 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
   <PropertyGroup>
-    <PublishUrlHistory>F:\Documents\T1_Publish\clicker-game\|publish\</PublishUrlHistory>
+    <PublishUrlHistory>C:\Users\priva\Desktop\game1\v2024-4-30-1\|C:\Users\priva\Desktop\game1\|F:\Documents\T1_Publish\clicker-game\|publish\</PublishUrlHistory>
     <InstallUrlHistory />
-    <SupportUrlHistory />
+    <SupportUrlHistory>https://discord.gg/thepile</SupportUrlHistory>
     <UpdateUrlHistory />
     <BootstrapperUrlHistory />
     <ErrorReportUrlHistory />

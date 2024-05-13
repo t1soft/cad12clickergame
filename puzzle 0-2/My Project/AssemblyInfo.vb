@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("cad12's clicker game")>
-<Assembly: AssemblyDescription("its a clicker game from cad12 :)")>
+<Assembly: AssemblyTitle("TheProgressSpammer")>
+<Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("cad12's clicker game")>
-<Assembly: AssemblyCopyright("Copyright © cad12ishappy 2023")>
+<Assembly: AssemblyProduct("TheProgressSpammer")>
+<Assembly: AssemblyCopyright("Copyright © iamcad 2023")>
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("1e5f7257-96cd-4aec-9290-c9a0936f915d")> 
+<Assembly: Guid("1e5f7257-96cd-4aec-9290-c9a0936f915d")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("2024.4.30.1")>
+<Assembly: AssemblyFileVersion("2024.4.30.1")>

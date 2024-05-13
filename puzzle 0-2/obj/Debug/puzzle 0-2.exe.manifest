@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="puzzle 0-2.exe" version="3.4.2022.2" publicKeyToken="0000000000000000" language="en" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="puzzle 0-2.exe" version="2024.4.30.3" publicKeyToken="0000000000000000" language="en" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="puzzle 0-2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="puzzle 0-2" version="2024.4.30.1" language="neutral" processorArchitecture="msil" />
     <commandLine file="puzzle 0-2.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -42,24 +42,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="puzzle 0-2.exe" size="47616">
-      <assemblyIdentity name="puzzle 0-2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="puzzle 0-2.exe" size="64952">
+      <assemblyIdentity name="puzzle 0-2" version="2024.4.30.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>unZQlSgqDWjA0bKIneqkkLv0BxrhNyWxWVVXVs790Uw=</dsig:DigestValue>
+        <dsig:DigestValue>eKO4RPnz4lKrtoLJ3FUm5p3b63aBzbVKVK6EsY2LUEU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="puzzle 0-2.exe.config" size="2613">
+  <file name="puzzle 0-2.exe.config" size="3097">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>acEM+C6pdXWpu9/g+S0qZ6aOfEpQLWZHK6feXsBLkCY=</dsig:DigestValue>
+      <dsig:DigestValue>EsfuNY6sMDG3l+DqKlQDZxeVBOP2FCmHywHJ3i1LyoU=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

@@ -92,25 +92,73 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public Property WinsCount() As Integer
+         Global.System.Configuration.DefaultSettingValueAttribute("1")>  _
+        Public Property OppClickSpeed() As Integer
             Get
-                Return CType(Me("WinsCount"),Integer)
+                Return CType(Me("OppClickSpeed"),Integer)
             End Get
             Set
-                Me("WinsCount") = value
+                Me("OppClickSpeed") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("10")>  _
+        Public Property OppCooldownA() As String
+            Get
+                Return CType(Me("OppCooldownA"),String)
+            End Get
+            Set
+                Me("OppCooldownA") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("20")>  _
+        Public Property OppCooldownB() As String
+            Get
+                Return CType(Me("OppCooldownB"),String)
+            End Get
+            Set
+                Me("OppCooldownB") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("30")>  _
+        Public Property OppCooldownC() As String
+            Get
+                Return CType(Me("OppCooldownC"),String)
+            End Get
+            Set
+                Me("OppCooldownC") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
-        Public Property LossesCount() As Integer
+        Public Property userXP() As Integer
             Get
-                Return CType(Me("LossesCount"),Integer)
+                Return CType(Me("userXP"),Integer)
             End Get
             Set
-                Me("LossesCount") = value
+                Me("userXP") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property gameXP() As Integer
+            Get
+                Return CType(Me("gameXP"),Integer)
+            End Get
+            Set
+                Me("gameXP") = value
             End Set
         End Property
     End Class

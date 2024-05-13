@@ -11,10 +11,22 @@
     <Setting Name="userCatchphrase" Type="System.String" Scope="User">
       <Value Profile="(Default)">Set your catchphrase in settings!</Value>
     </Setting>
-    <Setting Name="WinsCount" Type="System.Int32" Scope="User">
+    <Setting Name="OppClickSpeed" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="OppCooldownA" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="OppCooldownB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="OppCooldownC" Type="System.String" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="userXP" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="LossesCount" Type="System.Int32" Scope="User">
+    <Setting Name="gameXP" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>
