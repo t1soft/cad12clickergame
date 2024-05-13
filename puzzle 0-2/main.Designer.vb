@@ -24,8 +24,6 @@ Partial Class main
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(main))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage5 = New System.Windows.Forms.TabPage()
-        Me.Label20 = New System.Windows.Forms.Label()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -34,6 +32,25 @@ Partial Class main
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TabPage6 = New System.Windows.Forms.TabPage()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.OppBPicker = New System.Windows.Forms.NumericUpDown()
+        Me.OppCPicker = New System.Windows.Forms.NumericUpDown()
+        Me.OppAPicker = New System.Windows.Forms.NumericUpDown()
+        Me.OppClickPicker = New System.Windows.Forms.NumericUpDown()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.Label20 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Button13 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -42,6 +59,7 @@ Partial Class main
         Me.nameLabel = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.Label29 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Button8 = New System.Windows.Forms.Button()
@@ -66,36 +84,20 @@ Partial Class main
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TabPage6 = New System.Windows.Forms.TabPage()
-        Me.Label28 = New System.Windows.Forms.Label()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.OppBPicker = New System.Windows.Forms.NumericUpDown()
-        Me.OppCPicker = New System.Windows.Forms.NumericUpDown()
-        Me.OppAPicker = New System.Windows.Forms.NumericUpDown()
-        Me.OppClickPicker = New System.Windows.Forms.NumericUpDown()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.Label30 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
-        Me.TabPage5.SuspendLayout()
         Me.TabPage1.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.TabPage3.SuspendLayout()
-        Me.TabPage4.SuspendLayout()
         Me.TabPage6.SuspendLayout()
         CType(Me.OppBPicker, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OppCPicker, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OppAPicker, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OppClickPicker, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage5.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.TabPage3.SuspendLayout()
+        Me.TabPage4.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -115,27 +117,6 @@ Partial Class main
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(1189, 617)
         Me.TabControl1.TabIndex = 0
-        '
-        'TabPage5
-        '
-        Me.TabPage5.Controls.Add(Me.Label20)
-        Me.TabPage5.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(1181, 591)
-        Me.TabPage5.TabIndex = 4
-        Me.TabPage5.Text = "Campaign"
-        Me.TabPage5.UseVisualStyleBackColor = True
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Label20.Location = New System.Drawing.Point(19, 286)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(301, 20)
-        Me.Label20.TabIndex = 11
-        Me.Label20.Text = "no campaign yet, play by clicking Quick Play"
         '
         'TabPage1
         '
@@ -231,12 +212,235 @@ Partial Class main
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Label7.Location = New System.Drawing.Point(44, 531)
+        Me.Label7.Location = New System.Drawing.Point(27, 531)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(448, 40)
         Me.Label7.TabIndex = 10
         Me.Label7.Text = "GOAL: Fill the Progress Bar to the Top! DO NOT LET IT EMPTY OUT!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Click on the Ho" &
     "w to Play Tab to learn how to play!"
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.Black
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button5.Font = New System.Drawing.Font("Segoe UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button5.Image = Global.puzzle_0_1.My.Resources.Resources.marvinmode
+        Me.Button5.Location = New System.Drawing.Point(836, 26)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(292, 271)
+        Me.Button5.TabIndex = 4
+        Me.Button5.Text = "marvin.exe (marvin mode)"
+        Me.Button5.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.DarkRed
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Segoe UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button4.Image = Global.puzzle_0_1.My.Resources.Resources.davidgamer
+        Me.Button4.Location = New System.Drawing.Point(575, 26)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(253, 228)
+        Me.Button4.TabIndex = 3
+        Me.Button4.Text = "David/Gamer Mode"
+        Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.Gold
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Segoe UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Image = Global.puzzle_0_1.My.Resources.Resources.moderatehard
+        Me.Button3.Location = New System.Drawing.Point(373, 26)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(194, 186)
+        Me.Button3.TabIndex = 2
+        Me.Button3.Text = "Moderate/Hard"
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.PaleGreen
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Image = Global.puzzle_0_1.My.Resources.Resources.normal
+        Me.Button2.Location = New System.Drawing.Point(203, 26)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(162, 152)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "Normal"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.SkyBlue
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Image = Global.puzzle_0_1.My.Resources.Resources.easymode
+        Me.Button1.Location = New System.Drawing.Point(31, 26)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(164, 108)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "Easy Mode"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'TabPage6
+        '
+        Me.TabPage6.Controls.Add(Me.Label10)
+        Me.TabPage6.Controls.Add(Me.Label28)
+        Me.TabPage6.Controls.Add(Me.Label27)
+        Me.TabPage6.Controls.Add(Me.Label26)
+        Me.TabPage6.Controls.Add(Me.Label25)
+        Me.TabPage6.Controls.Add(Me.Label24)
+        Me.TabPage6.Controls.Add(Me.OppBPicker)
+        Me.TabPage6.Controls.Add(Me.OppCPicker)
+        Me.TabPage6.Controls.Add(Me.OppAPicker)
+        Me.TabPage6.Controls.Add(Me.OppClickPicker)
+        Me.TabPage6.Controls.Add(Me.Button14)
+        Me.TabPage6.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage6.Name = "TabPage6"
+        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage6.Size = New System.Drawing.Size(1181, 591)
+        Me.TabPage6.TabIndex = 5
+        Me.TabPage6.Text = "Custom Game"
+        Me.TabPage6.UseVisualStyleBackColor = True
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(25, 119)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(124, 26)
+        Me.Label10.TabIndex = 52
+        Me.Label10.Text = "Custom Games do not " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "affect your XP levels." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Location = New System.Drawing.Point(284, 200)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(71, 26)
+        Me.Label28.TabIndex = 51
+        Me.Label28.Text = "Electricution" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(-25)"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Location = New System.Drawing.Point(284, 163)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(70, 26)
+        Me.Label27.TabIndex = 50
+        Me.Label27.Text = "Flaming Fire" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(-15)"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Location = New System.Drawing.Point(284, 125)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(69, 26)
+        Me.Label26.TabIndex = 49
+        Me.Label26.Text = "Blunt Attack" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(-5)"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(211, 102)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(172, 13)
+        Me.Label25.TabIndex = 48
+        Me.Label25.Text = "Opponent Power-Up Cooldown"
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Location = New System.Drawing.Point(284, 39)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(95, 26)
+        Me.Label24.TabIndex = 47
+        Me.Label24.Text = "Opponent" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Clicks per 1/5 Sec"
+        '
+        'OppBPicker
+        '
+        Me.OppBPicker.Location = New System.Drawing.Point(214, 167)
+        Me.OppBPicker.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.OppBPicker.Name = "OppBPicker"
+        Me.OppBPicker.Size = New System.Drawing.Size(64, 22)
+        Me.OppBPicker.TabIndex = 46
+        Me.OppBPicker.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
+        'OppCPicker
+        '
+        Me.OppCPicker.Location = New System.Drawing.Point(214, 204)
+        Me.OppCPicker.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.OppCPicker.Name = "OppCPicker"
+        Me.OppCPicker.Size = New System.Drawing.Size(64, 22)
+        Me.OppCPicker.TabIndex = 45
+        Me.OppCPicker.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
+        'OppAPicker
+        '
+        Me.OppAPicker.Location = New System.Drawing.Point(214, 128)
+        Me.OppAPicker.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.OppAPicker.Name = "OppAPicker"
+        Me.OppAPicker.Size = New System.Drawing.Size(64, 22)
+        Me.OppAPicker.TabIndex = 44
+        Me.OppAPicker.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
+        'OppClickPicker
+        '
+        Me.OppClickPicker.Location = New System.Drawing.Point(214, 43)
+        Me.OppClickPicker.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.OppClickPicker.Name = "OppClickPicker"
+        Me.OppClickPicker.Size = New System.Drawing.Size(64, 22)
+        Me.OppClickPicker.TabIndex = 43
+        Me.OppClickPicker.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
+        'Button14
+        '
+        Me.Button14.BackColor = System.Drawing.Color.Goldenrod
+        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button14.Font = New System.Drawing.Font("Segoe UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button14.Location = New System.Drawing.Point(28, 37)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(164, 78)
+        Me.Button14.TabIndex = 42
+        Me.Button14.Text = "Play Custom"
+        Me.Button14.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.Button14.UseVisualStyleBackColor = False
+        '
+        'TabPage5
+        '
+        Me.TabPage5.Controls.Add(Me.Label20)
+        Me.TabPage5.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage5.Name = "TabPage5"
+        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage5.Size = New System.Drawing.Size(1181, 591)
+        Me.TabPage5.TabIndex = 4
+        Me.TabPage5.Text = "Campaign"
+        Me.TabPage5.UseVisualStyleBackColor = True
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.Label20.Location = New System.Drawing.Point(19, 286)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(301, 20)
+        Me.Label20.TabIndex = 11
+        Me.Label20.Text = "no campaign yet, play by clicking Quick Play"
         '
         'TabPage2
         '
@@ -317,6 +521,8 @@ Partial Class main
         '
         'TabPage3
         '
+        Me.TabPage3.Controls.Add(Me.Label30)
+        Me.TabPage3.Controls.Add(Me.RichTextBox1)
         Me.TabPage3.Controls.Add(Me.Label29)
         Me.TabPage3.Controls.Add(Me.Label8)
         Me.TabPage3.Controls.Add(Me.LinkLabel1)
@@ -336,15 +542,24 @@ Partial Class main
         Me.TabPage3.Text = "Settings"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.Label29.Location = New System.Drawing.Point(605, 30)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(0, 20)
+        Me.Label29.TabIndex = 12
+        '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Label8.Location = New System.Drawing.Point(12, 508)
+        Me.Label8.Location = New System.Drawing.Point(22, 524)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(239, 40)
         Me.Label8.TabIndex = 11
-        Me.Label8.Text = "Version: 4.28.2024" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "special thanks to the chaotic lands!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label8.Text = "Version: 5.13.2024" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "special thanks to the chaotic lands!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'LinkLabel1
         '
@@ -356,16 +571,16 @@ Partial Class main
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(20, 224)
+        Me.Button8.Location = New System.Drawing.Point(962, 561)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(417, 34)
+        Me.Button8.Size = New System.Drawing.Size(211, 22)
         Me.Button8.TabIndex = 7
         Me.Button8.Text = "Reset the Game and Clear XP Data"
         Me.Button8.UseVisualStyleBackColor = True
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(362, 126)
+        Me.Button7.Location = New System.Drawing.Point(368, 98)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 26)
         Me.Button7.TabIndex = 6
@@ -374,7 +589,7 @@ Partial Class main
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(362, 96)
+        Me.Button6.Location = New System.Drawing.Point(368, 68)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 27)
         Me.Button6.TabIndex = 5
@@ -383,14 +598,14 @@ Partial Class main
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(110, 126)
+        Me.TextBox4.Location = New System.Drawing.Point(116, 98)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(246, 22)
         Me.TextBox4.TabIndex = 4
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(110, 97)
+        Me.TextBox3.Location = New System.Drawing.Point(116, 69)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(246, 22)
         Me.TextBox3.TabIndex = 3
@@ -399,7 +614,7 @@ Partial Class main
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Label12.Location = New System.Drawing.Point(16, 126)
+        Me.Label12.Location = New System.Drawing.Point(22, 98)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(88, 19)
         Me.Label12.TabIndex = 2
@@ -409,7 +624,7 @@ Partial Class main
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Label11.Location = New System.Drawing.Point(30, 100)
+        Me.Label11.Location = New System.Drawing.Point(36, 72)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(74, 19)
         Me.Label11.TabIndex = 1
@@ -588,216 +803,24 @@ Partial Class main
         Me.Button12.Text = "Normal Attack (-1)"
         Me.Button12.UseVisualStyleBackColor = True
         '
-        'Button5
+        'RichTextBox1
         '
-        Me.Button5.BackColor = System.Drawing.Color.Black
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Segoe UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button5.Image = Global.puzzle_0_1.My.Resources.Resources.marvinmode
-        Me.Button5.Location = New System.Drawing.Point(836, 26)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(292, 271)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "marvin.exe (marvin mode)"
-        Me.Button5.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.RichTextBox1.Location = New System.Drawing.Point(818, 14)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.ReadOnly = True
+        Me.RichTextBox1.Size = New System.Drawing.Size(355, 532)
+        Me.RichTextBox1.TabIndex = 13
+        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
-        'Button4
+        'Label30
         '
-        Me.Button4.BackColor = System.Drawing.Color.DarkRed
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Segoe UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button4.Image = Global.puzzle_0_1.My.Resources.Resources.davidgamer
-        Me.Button4.Location = New System.Drawing.Point(575, 26)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(253, 228)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "David/Gamer Mode"
-        Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.Gold
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Segoe UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Image = Global.puzzle_0_1.My.Resources.Resources.moderatehard
-        Me.Button3.Location = New System.Drawing.Point(373, 26)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(194, 186)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Moderate/Hard"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.PaleGreen
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Image = Global.puzzle_0_1.My.Resources.Resources.normal
-        Me.Button2.Location = New System.Drawing.Point(203, 26)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(162, 152)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Normal"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.SkyBlue
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Image = Global.puzzle_0_1.My.Resources.Resources.easymode
-        Me.Button1.Location = New System.Drawing.Point(31, 26)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(164, 108)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Easy Mode"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'TabPage6
-        '
-        Me.TabPage6.Controls.Add(Me.Label10)
-        Me.TabPage6.Controls.Add(Me.Label28)
-        Me.TabPage6.Controls.Add(Me.Label27)
-        Me.TabPage6.Controls.Add(Me.Label26)
-        Me.TabPage6.Controls.Add(Me.Label25)
-        Me.TabPage6.Controls.Add(Me.Label24)
-        Me.TabPage6.Controls.Add(Me.OppBPicker)
-        Me.TabPage6.Controls.Add(Me.OppCPicker)
-        Me.TabPage6.Controls.Add(Me.OppAPicker)
-        Me.TabPage6.Controls.Add(Me.OppClickPicker)
-        Me.TabPage6.Controls.Add(Me.Button14)
-        Me.TabPage6.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage6.Size = New System.Drawing.Size(1181, 591)
-        Me.TabPage6.TabIndex = 5
-        Me.TabPage6.Text = "Custom Game"
-        Me.TabPage6.UseVisualStyleBackColor = True
-        '
-        'Label28
-        '
-        Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(284, 200)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(71, 26)
-        Me.Label28.TabIndex = 51
-        Me.Label28.Text = "Electricution" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(-25)"
-        '
-        'Label27
-        '
-        Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(284, 163)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(70, 26)
-        Me.Label27.TabIndex = 50
-        Me.Label27.Text = "Flaming Fire" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(-15)"
-        '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(284, 125)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(69, 26)
-        Me.Label26.TabIndex = 49
-        Me.Label26.Text = "Blunt Attack" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(-5)"
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(211, 102)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(172, 13)
-        Me.Label25.TabIndex = 48
-        Me.Label25.Text = "Opponent Power-Up Cooldown"
-        '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(284, 39)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(95, 26)
-        Me.Label24.TabIndex = 47
-        Me.Label24.Text = "Opponent" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Clicks per 1/5 Sec"
-        '
-        'OppBPicker
-        '
-        Me.OppBPicker.Location = New System.Drawing.Point(214, 167)
-        Me.OppBPicker.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.OppBPicker.Name = "OppBPicker"
-        Me.OppBPicker.Size = New System.Drawing.Size(64, 22)
-        Me.OppBPicker.TabIndex = 46
-        Me.OppBPicker.Value = New Decimal(New Integer() {1, 0, 0, 0})
-        '
-        'OppCPicker
-        '
-        Me.OppCPicker.Location = New System.Drawing.Point(214, 204)
-        Me.OppCPicker.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.OppCPicker.Name = "OppCPicker"
-        Me.OppCPicker.Size = New System.Drawing.Size(64, 22)
-        Me.OppCPicker.TabIndex = 45
-        Me.OppCPicker.Value = New Decimal(New Integer() {1, 0, 0, 0})
-        '
-        'OppAPicker
-        '
-        Me.OppAPicker.Location = New System.Drawing.Point(214, 128)
-        Me.OppAPicker.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.OppAPicker.Name = "OppAPicker"
-        Me.OppAPicker.Size = New System.Drawing.Size(64, 22)
-        Me.OppAPicker.TabIndex = 44
-        Me.OppAPicker.Value = New Decimal(New Integer() {1, 0, 0, 0})
-        '
-        'OppClickPicker
-        '
-        Me.OppClickPicker.Location = New System.Drawing.Point(214, 43)
-        Me.OppClickPicker.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.OppClickPicker.Name = "OppClickPicker"
-        Me.OppClickPicker.Size = New System.Drawing.Size(64, 22)
-        Me.OppClickPicker.TabIndex = 43
-        Me.OppClickPicker.Value = New Decimal(New Integer() {1, 0, 0, 0})
-        '
-        'Button14
-        '
-        Me.Button14.BackColor = System.Drawing.Color.Goldenrod
-        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button14.Font = New System.Drawing.Font("Segoe UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button14.Location = New System.Drawing.Point(28, 37)
-        Me.Button14.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(164, 78)
-        Me.Button14.TabIndex = 42
-        Me.Button14.Text = "Play Custom"
-        Me.Button14.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.Button14.UseVisualStyleBackColor = False
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(25, 119)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(124, 26)
-        Me.Label10.TabIndex = 52
-        Me.Label10.Text = "Custom Games do not " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "affect your XP levels." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.Label29.Location = New System.Drawing.Point(605, 30)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(0, 20)
-        Me.Label29.TabIndex = 12
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.Location = New System.Drawing.Point(22, 30)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(127, 21)
+        Me.Label30.TabIndex = 14
+        Me.Label30.Text = "Profile Settings"
         '
         'main
         '
@@ -810,12 +833,18 @@ Partial Class main
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "cad12's Clicker Game! - Demo"
+        Me.Text = "ProgressSpammer-Demo"
         Me.TabControl1.ResumeLayout(False)
-        Me.TabPage5.ResumeLayout(False)
-        Me.TabPage5.PerformLayout()
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
+        Me.TabPage6.ResumeLayout(False)
+        Me.TabPage6.PerformLayout()
+        CType(Me.OppBPicker, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.OppCPicker, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.OppAPicker, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.OppClickPicker, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage5.ResumeLayout(False)
+        Me.TabPage5.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
@@ -823,12 +852,6 @@ Partial Class main
         Me.TabPage3.PerformLayout()
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
-        Me.TabPage6.ResumeLayout(False)
-        Me.TabPage6.PerformLayout()
-        CType(Me.OppBPicker, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.OppCPicker, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.OppAPicker, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.OppClickPicker, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -894,4 +917,6 @@ Partial Class main
     Friend WithEvents Button14 As Button
     Friend WithEvents Label10 As Label
     Friend WithEvents Label29 As Label
+    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Label30 As Label
 End Class

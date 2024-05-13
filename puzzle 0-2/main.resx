@@ -117,6 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>5.13.2024 Version Update Notes
+
+&gt; New XP System
+When playing a round, you will earn XP when winning or lose XP when losing or forfiting. The amount of XP you can win, or lose Depends on what level of difficulty the round was set to. Your XP Score can now be found in the Stats Page, replacing the Wins/Losses
+
+&gt; Custom Games
+You can now play the game however you want, by customizing aspects of the game's difficulty. Make it very easy, or impossible. Either way, have fun! Also to note, your XP score will never be affected by a custom game (even if you win.)
+
+&gt; New Looks
+new colors, pictures, other stuff. Enjoy the new appearence
+
+&gt; Exiting during the game is now a forfeit
+hey, tis is cheating if you quit before you lose (lol)
+
+&gt; Added Health Warnings
+Please take a break and read these warnings. 
+(its located in the "How To Play" tab)
+</value>
+  </data>
   <data name="Label22.Text" xml:space="preserve">
     <value>just so I dont get liable (and also for your wellbeing): Please take care of yourself.
 button mashing might be the only effective strat, but doing so for a while can cause

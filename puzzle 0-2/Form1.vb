@@ -25,7 +25,6 @@ Public Class Form1
 
 #End Region
 
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Button2.Enabled = False
@@ -355,8 +354,14 @@ Public Class Form1
 
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         If GameStarted = True Then
-            e.Cancel = True
-            winEndProtocall(3)
+            Dim result = MsgBox("Exiting right now is a forfit. Are you sure?", vbYesNo)
+            If result = DialogResult.Yes Then
+                winEndProtocall(3)
+                Me.Close()
+            Else
+                e.Cancel = True
+            End If
         End If
     End Sub
+
 End Class
