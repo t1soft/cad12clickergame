@@ -3,27 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\priva\\source\\repos\\t1soft\\cad12clickergame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E233D6FA-3C58-4EEB-ACAC-72552A4F467C}|puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj|C:\\Users\\priva\\source\\repos\\t1soft\\cad12clickergame\\puzzle 0-2\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{E233D6FA-3C58-4EEB-ACAC-72552A4F467C}|puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj|solutionrelative:puzzle 0-2\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E233D6FA-3C58-4EEB-ACAC-72552A4F467C}|puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj|c:\\users\\priva\\source\\repos\\t1soft\\cad12clickergame\\puzzle 0-2\\main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{E233D6FA-3C58-4EEB-ACAC-72552A4F467C}|puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj|solutionrelative:puzzle 0-2\\main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|cad12\u0027s Clicker Game!||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E233D6FA-3C58-4EEB-ACAC-72552A4F467C}|puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj|C:\\Users\\priva\\source\\repos\\t1soft\\cad12clickergame\\puzzle 0-2\\main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{E233D6FA-3C58-4EEB-ACAC-72552A4F467C}|puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj|solutionrelative:puzzle 0-2\\main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{E233D6FA-3C58-4EEB-ACAC-72552A4F467C}|puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj|C:\\Users\\priva\\source\\repos\\t1soft\\cad12clickergame\\puzzle 0-2\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{E233D6FA-3C58-4EEB-ACAC-72552A4F467C}|puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj|solutionrelative:puzzle 0-2\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E233D6FA-3C58-4EEB-ACAC-72552A4F467C}|puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj|C:\\Users\\priva\\source\\repos\\t1soft\\cad12clickergame\\puzzle 0-2\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{E233D6FA-3C58-4EEB-ACAC-72552A4F467C}|puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj|solutionrelative:puzzle 0-2\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E233D6FA-3C58-4EEB-ACAC-72552A4F467C}|puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj|c:\\users\\priva\\source\\repos\\t1soft\\cad12clickergame\\puzzle 0-2\\my project\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
-      "RelativeMoniker": "D:0:0:{E233D6FA-3C58-4EEB-ACAC-72552A4F467C}|puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj|solutionrelative:puzzle 0-2\\my project\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+      "AbsoluteMoniker": "D:0:0:{E233D6FA-3C58-4EEB-ACAC-72552A4F467C}|puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj|C:\\Users\\priva\\source\\repos\\t1soft\\cad12clickergame\\puzzle 0-2\\main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{E233D6FA-3C58-4EEB-ACAC-72552A4F467C}|puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj|solutionrelative:puzzle 0-2\\main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|cad12\u0027s Clicker Game!||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,15 +29,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "main.vb [Design]",
               "DocumentMoniker": "C:\\Users\\priva\\source\\repos\\t1soft\\cad12clickergame\\puzzle 0-2\\main.vb",
               "RelativeDocumentMoniker": "puzzle 0-2\\main.vb",
@@ -53,20 +45,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.vb",
               "DocumentMoniker": "C:\\Users\\priva\\source\\repos\\t1soft\\cad12clickergame\\puzzle 0-2\\Form1.vb",
               "RelativeDocumentMoniker": "puzzle 0-2\\Form1.vb",
               "ToolTip": "C:\\Users\\priva\\source\\repos\\t1soft\\cad12clickergame\\puzzle 0-2\\Form1.vb",
               "RelativeToolTip": "puzzle 0-2\\Form1.vb",
-              "ViewState": "AQIAALAAAAAAAAAAAAAcwG0BAAAAAAAA",
+              "ViewState": "AQIAAFcBAAAAAAAAAAAgwG0BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-04-29T07:10:11.59Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Form1.vb [Design]",
               "DocumentMoniker": "C:\\Users\\priva\\source\\repos\\t1soft\\cad12clickergame\\puzzle 0-2\\Form1.vb",
               "RelativeDocumentMoniker": "puzzle 0-2\\Form1.vb",
@@ -84,22 +76,21 @@
               "RelativeDocumentMoniker": "puzzle 0-2\\main.vb",
               "ToolTip": "C:\\Users\\priva\\source\\repos\\t1soft\\cad12clickergame\\puzzle 0-2\\main.vb",
               "RelativeToolTip": "puzzle 0-2\\main.vb",
-              "ViewState": "AQIAACwAAAAAAAAAAADwvzkAAAAqAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAhwEIAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-04-29T07:07:20.677Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "cad12\u0027s Clicker Game!",
-              "DocumentMoniker": "C:\\Users\\priva\\Source\\Repos\\t1soft\\cad12clickergame\\puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj",
+              "DocumentMoniker": "C:\\Users\\priva\\source\\repos\\t1soft\\cad12clickergame\\puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj",
               "RelativeDocumentMoniker": "puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj",
-              "ToolTip": "C:\\Users\\priva\\Source\\Repos\\t1soft\\cad12clickergame\\puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj",
+              "ToolTip": "C:\\Users\\priva\\source\\repos\\t1soft\\cad12clickergame\\puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj",
               "RelativeToolTip": "puzzle 0-2\\cad12\u0027s Clicker Game!.vbproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-29T06:49:16.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T06:49:16.663Z"
             }
           ]
         }

@@ -22,11 +22,11 @@
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        StartQuick(1, 1, 3, 5, 200)
+        StartQuick(1, 1, 3, 5, 400)
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        StartQuick(6, 15, 15, 15, 500)
+        StartQuick(5, 5, 10, 15, 600)
     End Sub
 
     Private Sub menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -60,5 +60,9 @@
 
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
         StartQuick(OppClickPicker.Value, OppAPicker.Value, OppBPicker.Value, OppCPicker.Value, 0)
+    End Sub
+
+    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
+        StartQuick(2, 3, 6, 9, 200)
     End Sub
 End Class
